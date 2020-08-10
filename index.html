@@ -1,0 +1,83 @@
+<htm>
+    <head>
+        <title>Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel=preload as=image href="./assets/gifs/boss_damaged.gif">
+        <link rel=preload as=image href="./assets/gifs/boss_default.gif">
+        <link rel=preload as=image href="./assets/gifs/boss_jimmy_attack.gif">
+        <link rel=preload as=image href="./assets/gifs/boss_middle_finger.gif">
+        <link rel=preload as=image href="./assets/gifs/boss_parties_girls_money.gif">
+        <link rel=preload as=image href="./assets/gifs/boss_patents.gif">
+        <link rel=preload as=image href="./assets/gifs/boss_rage.gif">
+        <link rel=preload as=image href="./assets/gifs/boss_wins.gif">
+        <link rel=preload as=image href="./assets/gifs/jimmy_damaged.gif">
+        <link rel=preload as=image href="./assets/gifs/jimmy_default.gif">
+        <link rel=preload as=image href="./assets/gifs/player_circlejerking.gif">
+        <link rel=preload as=image href="./assets/gifs/player_damaged.gif">
+        <link rel=preload as=image href="./assets/gifs/player_default.gif">
+        <link rel=preload as=image href="./assets/gifs/player_ethereum_2.0.gif">
+        <link rel=preload as=image href="./assets/gifs/player_lightning_network.gif">
+        <link rel=preload as=image href="./assets/gifs/player_proof_of_social_media.gif">
+        <link rel=preload as=image href="./assets/gifs/player_virtue_signal.gif">
+        <link rel=preload as=image href="./assets/gifs/player_wins.gif">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body draggable="false">
+        <audio id="bgMusic" loop>
+            <source src="./assets/audio/Point of Clash.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="endMusic" loop>
+            <source src="./assets/audio/Intergalactic Odyssey.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    <div id="title" class="screens">
+    </div>
+    <div id="game" class="screens" style="display: none;">
+            <table>
+                <tr>
+                    <td style="border: 2px solid black;background-color: silver;"><div style="float: right;" id="playerReactionBar" class="reactionBar">&nbsp;</div></td>
+                    <td style="border: 2px solid black;background-color: silver;"><div id="bossReactionBar" class="reactionBar">&nbsp;</div></td>
+                </tr>
+
+                <tr>
+                    <td width="50%">
+                        <img width="100%" id="playerGif" alt="player">
+                    </td>
+                    <td width="50%">
+                        <img width="100%" id="bossGif" alt="boss">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="names" width="50%"></td>
+                    <td class="names" width="50%">Satoshi</td>
+                </tr>
+                <tr>
+                    <td style="border: 2px solid black;">
+                        <div  id="playerHp"></div>
+                    </td>
+                    <td style="border: 2px solid black;">
+                        <div style="float: right;text-align: right;" id="bossHp"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="player_attacks" width="50%">
+                    </td>
+                    <td id="boss_attacks" width="50%">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="player_wins" class="screens" style="text-align: center;display: none;">
+            <img src="assets/gifs/player_wins.gif" class="ending">
+        </div>
+        <div id="boss_wins" class="screens" style="text-align: center;display: none;">
+            <img src="assets/gifs/boss_wins.gif" class="ending">
+        </div>
+        <div id="credits">Music from <a href="https://patrickdearteaga.com/arcade-music/">patrickdearteaga.com</a></div>
+        <script src="objects.js"></script>
+        <script src="functions_globals.js"></script>
+        <script src="main.js"></script>
+
+    </body>
+</htm>
