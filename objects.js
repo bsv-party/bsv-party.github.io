@@ -97,9 +97,9 @@ const boss = {
     attack: function(){
         player.view_attackList.parentNode.classList.add("noPointer");
         let ceiling=this.level+2;
-        ceiling>this.maxlevel?ceiling=this.maxlevel:ceiling=ceiling;//prevents index out of bounds
-        min = Math.ceil(3);        
-        max = Math.floor(ceiling);
+        ceiling>this.maxlevel+1?ceiling=this.maxlevel+1:ceiling=ceiling;//prevents index out of bounds
+        min = 3;        
+        max = ceiling;
         randomAttack = Math.floor(Math.random() * (max - min + 1)) + min;
 
         document.getElementById(Object.keys(this.gifs)[randomAttack]).classList.add("activated");;
